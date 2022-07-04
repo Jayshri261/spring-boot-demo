@@ -1,0 +1,57 @@
+server:
+   port: 9090
+spring:
+   datasource:
+      password: root
+      url: jdbc:mysql://localhost:3306/javabatch
+      username: root
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+      properties:
+         hibernate:
+            format_sql: true
+           
+Management:
+ endpoints:
+  web:
+   base-path: /myactuator    
+   
+  
+   exposure:
+    include:
+     - "*"
+  
+  logging:
+  level:
+    com:
+      zensar: debug
+  
+  
+  
+    
+     
+     
+     
+#endpoint:
+#shutdown:
+ #enabled: true  
+ 
+ 
+ #info:
+  #build:
+   #enabled : true
+    #git:
+     #enabled : true
+      #env:
+       #enabled: true
+         
+         
+         
+  
+ #info:
+  #createdBy: Jayshri Gaikwad
+ #modified: 22 jun 22
+ 
+     
